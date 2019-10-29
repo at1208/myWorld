@@ -10,7 +10,7 @@ const User = require('./Model/userModel')
 
 
 
-const loginRoute = require('./Routes/loginRouteS')
+const AuthRoute = require('./Routes/authRoutes')
 
 
 
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-app.use('/login', loginRoute)
+app.use('/', AuthRoute)
 
 
 mongoose.connect(config.db)
