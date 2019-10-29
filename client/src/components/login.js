@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './login.css'
 import { Input } from 'antd';
 import { Icon } from 'antd'
-import Fade from 'react-reveal/Fade';
+import Bounce from 'react-reveal/Bounce';
 
 class Login extends Component{
 
@@ -19,7 +19,7 @@ OnSubmitClick = (e) => {
 
   render(){
     return <div>
-            <Fade bottom>
+                            <Bounce bottom>
          <div className='container-fluid shadow col-md-4 a1 text-center'>
 
 
@@ -35,7 +35,7 @@ OnSubmitClick = (e) => {
                     <button className='btn btn-danger' onClick={this.OnSubmitClick}>LOGIN</button>
                 </form>
          </div>
-                 </Fade>
+              </Bounce >
     </div>
   }
 }
